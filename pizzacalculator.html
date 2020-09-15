@@ -3,19 +3,19 @@
 <script>
 
 //Lucas Tigelaar Pizza calculator;
-var small;
-var medium;
-var large;
-small = prompt("how many small pizza(s) do you want? $7,50 each");   //hoeveel kleine pizzas de klant wilt.
-medium = prompt("how many medium pizza(s) do you want? $10.- each"); //hoeveel middel pizzas de klant wilt.
-large = prompt("how many large pizza(s) do you want? $12,50 each");  //hoeveel grote pizzas de klant wilt.
-document.write("Your order:" + " " + small + " " + "small pizza(s)" + " " + "with" + " " + medium + " " + "medium pizza(s)" + " " + "and" + " " + large + " " + "large pizza(s)" + "." + " "); //het aantal pizzas opgeschreven op de website.
+var Small;
+var Medium;
+var Large;
+Small = prompt("how many small pizza(s) do you want? $5.99 each");   //hoeveel kleine pizzas de klant wilt.
+Medium = prompt("how many medium pizza(s) do you want? $7.99 each"); //hoeveel middel pizzas de klant wilt.
+Large = prompt("how many large pizza(s) do you want? $9.99 each");  //hoeveel grote pizzas de klant wilt.
+document.write("Your order:" + " " + Small + " " + "small pizza(s)" + " " + "with" + " " + Medium + " " + "medium pizza(s)" + " " + "and" + " " + Large + " " + "large pizza(s)" + "." + " "); //het aantal pizzas opgeschreven op de website.
 
-var price1 = small * 7.50;   //hoeveel de kleine pizzas in totaal kostten.
-var price2 = medium * 10;    //hoeveel de middel pizzas in totaal kostten.
-var price3 = large * 12.50;  //hoeveel de grote pizzas in totaal kostten.
-var total = price1 + price2 + price3; //de totale prijs opgetelt.
-document.write("Total cost of small pizza(s):" + " " + "$" + price1 + "." + " " + "Total cost of medium pizza(s):" + " " + "$" + price2 + "." + " " + "Total cost of large pizza(s):" + " " + "$" + price3 + "." + " " + "Total price:" + " " + total + "."); //de totale prijs opgeschreven op de website.
+var PriceSmall = Small * 5.99;   //hoeveel de kleine pizzas in totaal kostten.
+var PriceMedium = Medium * 7.99;    //hoeveel de middel pizzas in totaal kostten.
+var PriceLarge = Large * 9.99;  //hoeveel de grote pizzas in totaal kostten.
+var Total = PriceSmall + PriceMedium + PriceLarge; //de totale prijs opgetelt.
+document.write("Total cost of small pizza(s):" + " " + "$" + PriceSmall + "." + " " + "Total cost of medium pizza(s):" + " " + "$" + PriceMedium + "." + " " + "Total cost of large pizza(s):" + " " + "$" + PriceLarge + "." + " " + "Total price:" + " " + "$" + Total + "."); //de totale prijs opgeschreven op de website.
 
 </script>
 </body>
