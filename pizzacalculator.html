@@ -3,17 +3,14 @@
 <script>
 
 //Lucas Tigelaar Pizza calculator;
-var Small;
-var Medium;
-var Large;
+const PriceSmall = 5.99; //hoeveel de kleine pizzas in totaal kostten.
+const PriceMedium = 7.99; //hoeveel de middel pizzas in totaal kostten.
+const PriceLarge = 9.99; //hoeveel de grote pizzas in totaal kostten.
 Small = prompt("how many small pizza(s) do you want? $5.99 each");   //hoeveel kleine pizzas de klant wilt.
 Medium = prompt("how many medium pizza(s) do you want? $7.99 each"); //hoeveel middel pizzas de klant wilt.
 Large = prompt("how many large pizza(s) do you want? $9.99 each");  //hoeveel grote pizzas de klant wilt.
 document.write("Your order:" + " " + Small + " " + "small pizza(s)" + " " + "with" + " " + Medium + " " + "medium pizza(s)" + " " + "and" + " " + Large + " " + "large pizza(s)" + "." + " "); //het aantal pizzas opgeschreven op de website.
 
-var PriceSmall = Small * 5.99;   //hoeveel de kleine pizzas in totaal kostten.
-var PriceMedium = Medium * 7.99;    //hoeveel de middel pizzas in totaal kostten.
-var PriceLarge = Large * 9.99;  //hoeveel de grote pizzas in totaal kostten.
 var Total = PriceSmall + PriceMedium + PriceLarge; //de totale prijs opgetelt.
 document.write("Total cost of small pizza(s):" + " " + "$" + PriceSmall + "." + " " + "Total cost of medium pizza(s):" + " " + "$" + PriceMedium + "." + " " + "Total cost of large pizza(s):" + " " + "$" + PriceLarge + "." + " " + "Total price:" + " " + "$" + Total + "."); //de totale prijs opgeschreven op de website.
 
