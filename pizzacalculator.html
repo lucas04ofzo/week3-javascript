@@ -6,17 +6,19 @@
 <body>
 <script>
 
-	//Lucas Tigelaar Pizza calculator;
-	const PriceSmall = 5.99; //hoeveel de kleine pizzas in totaal kostten.
-	const PriceMedium = 7.99; //hoeveel de middel pizzas in totaal kostten.
-	const PriceLarge = 9.99; //hoeveel de grote pizzas in totaal kostten.
-	Small = prompt("how many small pizza(s) do you want? $5.99 each");   //hoeveel kleine pizzas de klant wilt.
-	Medium = prompt("how many medium pizza(s) do you want? $7.99 each"); //hoeveel middel pizzas de klant wilt.
-	Large = prompt("how many large pizza(s) do you want? $9.99 each");  //hoeveel grote pizzas de klant wilt.
-	document.write("Your order:" + " " + Small + " " + "small pizza(s)" + " " + "with" + " " + Medium + " " + "medium pizza(s)" + " " + "and" + " " + Large + " " + "large pizza(s)" + "." + " "); //het aantal pizzas opgeschreven op de website.
+	// Lucas Tigelaar Pizza calculator
+	const Small= prompt("How many small pizza(s) do you want? $5.99 each"); // aantal small pizzas vragen en in de const opslaan
+	const Medium= prompt("How many medium pizza(s) do you want? $7.99 each"); // aantal medium pizzas vragen en in de const opslaan
+	const Large= prompt("How many large pizza(s) do you want? $9.99 each"); // aantal small pizzas vragen en in de const opslaan
 
-	var Total = PriceSmall*Small + PriceMedium*Medium + PriceLarge*Large; //de totale prijs opgetelt.
-	document.write("Total cost of small pizza(s):" + " " + "$" + PriceSmall*Small + "." + " " + "Total cost of medium pizza(s):" + " " + "$" + PriceMedium*Medium + "." + " " + "Total cost of large pizza(s):" + " " + "$" + PriceLarge*Large + "." + " " + "Total price:" + " " + "$" + Total + "."); //de totale prijs opgeschreven op de website.
+	const SmallPrice=Small*5.99; // de prijs van alle small pizzas optellen en in de const opslaan
+	const MediumPrice=Medium*7.99; // de prijs van alle medium pizzas optellen en in de const opslaan
+	const LargePrice=Large*9.99; // de prijs van alle large pizzas optellen en in de const opslaan
+
+	const Total=SmallPrice+MediumPrice+LargePrice; // de totale prijs van alle small, medium en large pizzas optellen en in de const opslaan
+
+	document.write("Your order: "+"<br>"+Small+" small pizzas, which costs $"+SmallPrice+"<br>"+Medium+" medium pizzas, which costs $"+MediumPrice+"<br>"+Large+" large pizzas, which costs $"+LargePrice+"<br>"+"Your total is: $"+Total); // op de pagina schrijven wat de klant heeft besteld en hoeveel het allemaal kost
+
 
 </script>
 </body>
